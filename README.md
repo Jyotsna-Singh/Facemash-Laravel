@@ -42,13 +42,24 @@ This project is a clone of the **FaceMash App** as shown in the movie "The Socia
 
 <p>A player&#39;s&nbsp;<em>expected score</em>&nbsp;is his probability of winning plus half his probability of drawing. Thus an expected score of 0.75 could represent a 75% chance of winning, 25% chance of losing, and 0% chance of drawing. On the other extreme it could represent a 50% chance of winning, 0% chance of losing, and 50% chance of drawing. The probability of drawing, as opposed to having a decisive result, is not specified in the Elo system. Instead a draw is considered half a win and half a loss.</p>
 
-<p>If Player A has a rating of&nbsp;<img alt="R_{A}" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0b096f1c60d7fdc543f3bc583fe32601f1c2f0cf" />&nbsp;and Player B a rating of&nbsp;<img alt="R_{B}" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/33d79a4532363bb4ed9602166704c3f98928478f" />, the exact formula <a href="https://en.wikipedia.org/wiki/Elo_rating_system#cite_note-AEE1978-11">[11]</a>&nbsp;for the expected score of Player A is</p>
+<p>If Player A has a rating of&nbsp;<img alt="R_{A}" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0b096f1c60d7fdc543f3bc583fe32601f1c2f0cf" />&nbsp;and Player B a rating of&nbsp;<img alt="R_{B}" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/33d79a4532363bb4ed9602166704c3f98928478f" />, the exact formula &nbsp;for the expected score of Player A is</p>
 
 <p><img alt="E_{A}={\frac {1}{1+10^{(R_{B}-R_{A})/400}}}." src="https://wikimedia.org/api/rest_v1/media/math/render/svg/51346e1c65f857c0025647173ae48ddac904adcb" /></p>
 
 <p>Similarly the expected score for Player B is</p>
 
 <p><img alt="E_{B}={\frac {1}{1+10^{(R_{A}-R_{B})/400}}}." src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4b340e7d15e61ee7d90f428dcf7f4b3c049d89ff" /></p>
+
+<p>When a player&#39;s actual tournament scores exceed his expected scores, the Elo system takes this as evidence that player&#39;s rating is too low, and needs to be adjusted upward. Similarly when a player&#39;s actual tournament scores fall short of his expected scores, that player&#39;s rating is adjusted downward. Elo&#39;s original suggestion, which is still widely used, was a simple linear adjustment proportional to the amount by which a player overperformed or underperformed his expected score. The maximum possible adjustment per game, called the K-factor, was set at&nbsp;<em>K</em>&nbsp;= 16 for masters and&nbsp;<em>K</em>&nbsp;= 32 for weaker players.</p>
+
+<p>Supposing Player A was expected to score&nbsp;<img alt="E_{A}" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6d368f77b6dfe496467559869a421efed0881bcd" />&nbsp;points but actually scored&nbsp;<img alt="S_{A}" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f581ca4fd5bc6d22270c6050703cf23e5b840435" />&nbsp;points. The formula for updating his rating is</p>
+
+<p><img alt="R_{A}^{\prime }=R_{A}+K(S_{A}-E_{A})." src="https://wikimedia.org/api/rest_v1/media/math/render/svg/09a11111b433582eccbb22c740486264549d1129" /></p>
+
+<p>This update can be performed after each game or each tournament, or after any suitable rating period. An example may help clarify. Suppose Player A has a rating of 1613, and plays in a five-round tournament. He or she loses to a player rated 1609, draws with a player rated 1477, defeats a player rated 1388, defeats a player rated 1586, and loses to a player rated 1720. The player&#39;s actual score is (0 + 0.5 + 1 + 1 + 0) = 2.5. The expected score, calculated according to the formula above, was (0.51 + 0.76 + 0.88 + 0.56 + 0.28) = 2.99. Therefore, the player&#39;s new rating is (1613 + 32&times;(2.5 &minus; 2.99)) = 1597, assuming that a K-factor of 32 is used.</p>
+
+<p>Note that while two wins, two losses, and one draw may seem like a par score, it is worse than expected for Player A because his or her opponents were lower rated on average. Therefore, Player A is slightly penalized. If Player A had scored two wins, one loss, and two draws, for a total score of three points, that would have been slightly better than expected, and the player&#39;s new rating would have been (1613 + 32&times;(3 &minus; 2.99)) = 1613.</p>
+
 
 <p align="center">
   <br><br>
