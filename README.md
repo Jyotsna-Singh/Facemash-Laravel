@@ -16,7 +16,7 @@ This project is a clone of the **FaceMash App** as shown in the movie "The Socia
 1.0.0 [![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](http://jyotsnasingh.com/projects/Laravel/Ecommerce/)
 
 ## Live Demo - FaceMash
-[![alt tag](https://github.com/Jyotsna-Singh/SearchVidz-YoutubeAPI/blob/master/img/green-button.PNG)](http://jyotsnasingh.com/projects/Laravel/FaceMash/)
+[![alt tag](https://github.com/Jyotsna-Singh/SearchVidz-YoutubeAPI/blob/master/img/red-button.PNG)](http://jyotsnasingh.com/projects/Laravel/FaceMash/)
 
 ## Snapshots
 
