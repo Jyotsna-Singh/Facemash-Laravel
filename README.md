@@ -1,10 +1,12 @@
+## 
+## Facemash App - As featured in the movie "The Social Network".
+
 <p align="center">
   <br><br>
   <img src="https://github.com/Jyotsna-Singh/Facemash-Laravel/blob/master/public/img/logo.PNG">
 </p>
 
-## Facemash App - As featured in the movie "The Social Network".
-
+## 
 This project is a clone of the **FaceMash App** as shown in the movie "The Social Network". It allows the players to rate two photos competitively. It uses the Elo Algorithm to calculate the rankings, expected probability of winning and losing. This app has been built with the PHP Laravel 5 Framework and uses Bootstrap for the Front-end.
 
 * Features/Technologies: 
