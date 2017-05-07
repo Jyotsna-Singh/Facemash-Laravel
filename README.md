@@ -1,6 +1,4 @@
-## 
 ## Facemash App - As featured in the movie "The Social Network".
-
 <p align="center">
   <br><br>
   <img src="https://github.com/Jyotsna-Singh/Facemash-Laravel/blob/master/public/img/logo.PNG">
