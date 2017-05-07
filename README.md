@@ -28,13 +28,13 @@ This project is a clone of the **FaceMash App** as shown in the movie "The Socia
 --- | 
 ![alt text](https://github.com/Jyotsna-Singh/Facemash-Laravel/blob/master/public/img/bio.PNG "Bio")  |  
 
-**Ranks** |  
---- | 
-![alt text](https://github.com/Jyotsna-Singh/Facemash-Laravel/blob/master/public/img/ranks.PNG "Ranks")  |  
-
 **Statistics** |  
 --- | 
 ![alt text](https://github.com/Jyotsna-Singh/Facemash-Laravel/blob/master/public/img/stats.PNG "Stats")  |  
+
+**Ranks** |  
+--- | 
+![alt text](https://github.com/Jyotsna-Singh/Facemash-Laravel/blob/master/public/img/ranks.PNG "Ranks")  |  
 
 
 ## Elo Algorithm
